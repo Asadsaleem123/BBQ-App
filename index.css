@@ -1,0 +1,136 @@
+body{
+    margin:0;
+    padding: 0;
+    font-size: 1rem;
+}
+*{
+    box-sizing: border-box;
+}
+/* 
+...................
+layout
+...................
+*/
+img{
+    max-width: 100%;
+}
+.container{
+    max-width: 900px;
+    width: 90%;
+    margin:0 auto;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+}
+.container-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+/* 
+................
+column 1 css
+.................
+*/
+.container-col-1{
+    /* background-image: url("images/BBQ.jpg"); */
+    padding: 0 2em;
+    min-height: 17em;
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color:white;
+    font-size: 2rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/BBQ.JPG') center center no-repeat;
+    
+    
+}
+.col-1-p{
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #F18119;
+    opacity: 1;
+}
+span{
+    font-weight: 900;
+    color: #ffff;
+}
+/* ...................
+column 2 css
+......................
+*/
+.container-col-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.col-2-register{
+    color:#DF4E13;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.col-2-h2{
+    margin-bottom: 0;
+}
+.col-2-p{
+color: #5A5A5A;
+opacity: 1;
+font-size: 1.5rem;
+line-height: 1.6;
+}
+.col-2-p2{
+    color: #989898;
+    font-size: .8rem;
+}
+input{
+    text-align: center;
+    padding: 1em 9em;
+    border:1px solid black;
+    border-radius: 5px;
+    margin: 1em;
+}
+.btn-register{
+    text-align: center;
+    padding: 1em 13.3em;
+    border:1px solid black;
+    border-radius: 5px;
+    margin: 1em;
+    background: transparent linear-gradient(270deg, #FF713B 0%, #FFA51D 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+@media (min-width:881px){
+    .container{
+        max-width: 1200px;
+    }
+    .container-flex{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+.container-col-1{
+    width: 55%;
+}
+.container-col-2{
+    width: 41%;
+}
+input{
+    padding: 1em 5em;
+}
+.btn-register{
+     padding: 1em 9.2em; ;
+}
+.col-2-p{
+    font-size: 1.2rem;
+}
+.container-col-2{
+    padding-top: 5em;
+}
+}
+
